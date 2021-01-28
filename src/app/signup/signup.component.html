@@ -1,1 +1,67 @@
-<p>signup works!</p>
+<div id="page">
+
+    <div class="mt-4 col-6 offset-3">
+
+        <div class="card" id="content">
+
+            <form class="text-center border border-light p-5" #registerForm="ngForm" (ngSubmit)="submit()" >
+
+                <p class="h3 mb-4" title="title">Créer un compte</p>
+                <p class="error" [hidden]='isOk'>{{error}}</p>
+
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <input type="text" class="form-control" name="lastname" placeholder="Nom *" [(ngModel)]="formData.lastname">
+                    </div>
+                </div>
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <input type="text" class="form-control" name="firstname" placeholder="Prénom *" [(ngModel)]="formData.firstname">
+                    </div>
+                </div>
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <input type="text" class="form-control" name="email" placeholder="Adresse mail *"
+                            [(ngModel)]="formData.email">
+                    </div>
+                </div>
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <input type="password" name="password" class="form-control" placeholder="Mot de passe *"
+                            [(ngModel)]="formData.password">
+                    </div>
+                </div>
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <input type="password" name="confirm" class="form-control" placeholder="Confirmer le mot de passe *"
+                            [(ngModel)]="formData.confirm">
+                    </div>
+                </div>
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <select class="form-select form-select-lg mb-3" name="sexe" aria-label="Default select example" [(ngModel)]="formData.sexe"
+                        style="width: 350px; height: 37px;">
+                            <option selected
+                            >Sexe</option>
+                            <option value="masculin">Masculin</option>
+                            <option value="feminin">Feminin</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="texte" name="age" class="form-control" placeholder="Age *"
+                            [(ngModel)]="formData.age">
+                    </div>
+                </div>
+
+                <!-- submit button -->
+                <button class="btn btn-primary" type="submit" style="margin-bottom: -40px;">Enregistrer</button>
+
+
+            </form>
+            <div class="container-fluid" id="lien">
+                <a href="/signIn">Vous avez déjà un compte? Connectez-vous</a>
+            </div>
+        </div>
+
+    </div>
+</div>

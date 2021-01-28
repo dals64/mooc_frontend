@@ -22,3 +22,17 @@
 .error{
     color: tomato
 }
+
+#page {
+    background-image: url("./../../assets/tamarcus-brown-zuQDqLFavI4-unsplash.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    height: 890px;
+    padding-top: 150px;
+}
+
+#content {
+    background-color:#fcfdff;
+}
