@@ -1,1 +1,29 @@
-<p>signin works!</p>
+<div class="mt-4 col-6 offset-3">
+
+    <div class="card" id="content">
+
+        <form class="text-center border border-light p-5" #registerForm="ngForm" (ngSubmit)="submit()">
+            <p class="h3 mb-4" title="title">Se connecter</p>
+            <p class="error" [hidden]= 'isOk'>{{error}}</p>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <input type="text" class="form-control" name="email" placeholder="Adresse mail *"
+                        [(ngModel)]="formData.email">
+                </div>
+            </div>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <input type="password" name="password" class="form-control"
+                        placeholder="Mot de passe *" [(ngModel)]="formData.password">
+                </div>
+            </div>
+
+            <!-- submit button -->
+            <button class="btn btn-primary" type="submit">connexion</button>
+
+
+        </form>
+        <!-- Default form register -->
+    </div>
+
+</div>

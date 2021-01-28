@@ -1,0 +1,24 @@
+#header{
+    font-size: large;
+    color: white;
+}
+
+#login{
+    margin-top: 250px;
+}
+
+#title {
+    text-align: center;
+}
+
+#content {
+    margin-top: 100px;
+}
+
+#title {
+    margin-bottom: 55px;
+}
+
+.error{
+    color: tomato
+}
