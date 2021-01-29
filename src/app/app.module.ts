@@ -9,13 +9,17 @@ import {SignInServiceService} from './Services/sign-in-service.service';
 import { AccueilComponent } from './accueil/accueil.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { KnowledgeFromComponent } from './knowledge-from/knowledge-from.component';
+import { AppBarComponent } from './app-bar/app-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    KnowledgeFromComponent,
+    AppBarComponent
   ],
   imports: [
     BrowserModule,
