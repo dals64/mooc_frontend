@@ -36,7 +36,7 @@ export class SignupComponent implements OnInit {
       console.log('ok')
       this.service.isLogged = !this.service.isLogged
       this.appBar.ngOnInit()
-      this.router.navigateByUrl('(principal:connaissances)')
+      this.router.navigate(['accueil', { outlets: { principal: ['connaissances'] } }])
     }
 
   }
