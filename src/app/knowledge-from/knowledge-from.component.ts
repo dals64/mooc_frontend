@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-knowledge-from',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KnowledgeFromComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   public connaissances = [
     'informatique', 'intélligence artificielle', 'commerce', 'finance', 'programmation', 'machine learning',
@@ -28,6 +29,10 @@ export class KnowledgeFromComponent implements OnInit {
     }else{
       this.chosen.push(value)
     }
+  }
+
+  onSubmit(){
+    this.router.navigate(['accueil', {outlets: {principal: ['home']}}])
   }
 
 }

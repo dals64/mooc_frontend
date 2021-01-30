@@ -12,6 +12,8 @@ export class AppBarComponent implements OnInit {
 
   public isLogged;
 
+  public name = 'Arold DONANG';
+
   ngOnInit(): void {
     this.isLogged = this.service.isLogged;
     console.log(this.isLogged)

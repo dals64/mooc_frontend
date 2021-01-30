@@ -11,6 +11,7 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { KnowledgeFromComponent } from './knowledge-from/knowledge-from.component';
 import { AppBarComponent } from './app-bar/app-bar.component';
+import { EtudiantComponent } from './etudiant/etudiant.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AppBarComponent } from './app-bar/app-bar.component';
     SigninComponent,
     SignupComponent,
     KnowledgeFromComponent,
-    AppBarComponent
+    AppBarComponent,
+    EtudiantComponent
   ],
   imports: [
     BrowserModule,
