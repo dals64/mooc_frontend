@@ -1,0 +1,9 @@
+#page {
+    padding-top: 20px;
+    background-color: #f5f5f5;
+    min-height: 750px;
+}
+
+#card {
+    max-width: 75rem;
+}

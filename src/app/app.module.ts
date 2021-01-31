@@ -12,6 +12,12 @@ import { SignupComponent } from './signup/signup.component';
 import { KnowledgeFromComponent } from './knowledge-from/knowledge-from.component';
 import { AppBarComponent } from './app-bar/app-bar.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoingOnCoursesComponent } from './going-on-courses/going-on-courses.component';
+import { FinishedCoursesComponent } from './finished-courses/finished-courses.component';
+import {MaterialModule} from './material/material.module';
+import { FooterComponent } from './footer/footer.component';
+import { FourOFourComponent } from './four-o-four/four-o-four.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +27,19 @@ import { EtudiantComponent } from './etudiant/etudiant.component';
     SignupComponent,
     KnowledgeFromComponent,
     AppBarComponent,
-    EtudiantComponent
+    EtudiantComponent,
+    GoingOnCoursesComponent,
+    FinishedCoursesComponent,
+    FooterComponent,
+    FourOFourComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [
     SignInServiceService,
