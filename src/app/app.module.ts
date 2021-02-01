@@ -19,6 +19,9 @@ import {MaterialModule} from './material/material.module';
 import { FooterComponent } from './footer/footer.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
 import { RecommandationsComponent } from './recommandations/recommandations.component';
+import { CoursePageComponent } from './course-page/course-page.component';
+import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
+import { VideoViewerComponent } from './video-viewer/video-viewer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { RecommandationsComponent } from './recommandations/recommandations.comp
     FinishedCoursesComponent,
     FooterComponent,
     FourOFourComponent,
-    RecommandationsComponent
+    RecommandationsComponent,
+    CoursePageComponent,
+    PdfViewerComponent,
+    VideoViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,7 @@ import { RecommandationsComponent } from './recommandations/recommandations.comp
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [
     SignInServiceService,
