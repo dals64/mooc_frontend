@@ -9,12 +9,10 @@ import { SignInServiceService } from './Services/sign-in-service.service';
 
 export class AppComponent {
 
-  constructor(private service: SignInServiceService){}
-
-  public isLogged = false;
+  constructor(){}
 
   ngOnInit(){
-    this.isLogged = this.service.isLogged;
+    
   }
 
 }

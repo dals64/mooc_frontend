@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AppBarComponent } from '../app-bar/app-bar.component';
+import { SignInServiceService } from '../Services/sign-in-service.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private service: SignInServiceService, private appBar: AppBarComponent) { }
 
   ngOnInit(): void {
   }
@@ -30,7 +33,10 @@ export class SignupComponent implements OnInit {
 
   submit() {
     if (this.validation()) {
-      console.log('ik')
+      console.log('ok')
+      this.service.isLogged = !this.service.isLogged
+      this.appBar.ngOnInit()
+      this.router.navigate(['accueil', { outlets: { principal: ['connaissances'] } }])
     }
 
   }
