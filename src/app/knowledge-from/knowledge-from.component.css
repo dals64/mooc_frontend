@@ -17,13 +17,10 @@
 }
 
 #subtitle {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 25px;
-    min-height: 200px;
-    padding-top: 50px;
-    max-width: 800px;
-    font-weight: 500;
-    background-color: tomato;
 }
 
 #go {

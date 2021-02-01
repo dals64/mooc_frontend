@@ -18,6 +18,7 @@ import { FinishedCoursesComponent } from './finished-courses/finished-courses.co
 import {MaterialModule} from './material/material.module';
 import { FooterComponent } from './footer/footer.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
+import { RecommandationsComponent } from './recommandations/recommandations.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FourOFourComponent } from './four-o-four/four-o-four.component';
     GoingOnCoursesComponent,
     FinishedCoursesComponent,
     FooterComponent,
-    FourOFourComponent
+    FourOFourComponent,
+    RecommandationsComponent
   ],
   imports: [
     BrowserModule,

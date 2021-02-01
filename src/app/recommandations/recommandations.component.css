@@ -1,0 +1,14 @@
+.section-title {
+    padding-top: 12px;
+    height: 50px;
+    
+    margin-bottom: 40px;
+    background-color: rgb(88, 151, 252);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card{
+    margin-right: 25px
+}
